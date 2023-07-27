@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- action 데이터를 전송할 주소 -->
+    <!-- method 데이터를 전송할 방법 -->
+    <!-- get 전송하는 데이터가 url에 붙어서 감. 전송하는 데이터가 url에 노출이 됨 -->
+    <!-- 보완에 취약할 수있다. 페이지 주소를 공유할 때 사용 -->
+
+    <!-- post방식은 데이터가 url에 붙지 않아서 사용자 눈에 보이지 않음 -->
+    <!-- 그러나 개발자 도구(f12)로 보면 확인 가능함 -->
+    <!-- 보안을 위해서 전송하는 데이터를 암호화하는 것이 좋다 -->
+    <!-- https 프로토콜을 사용하면 암호화가 된다 -->
+
+    <!-- target 데이터를 전송할 창을 어디로 할 거냐 -->
+    <!-- _self 자기 자신창 -->
+    <!-- _blank 새창(새탭)으로 열림-->
+
+    <!-- novalidate : form 태그 안의 input 요소의 정확성을 체크하지 않는다 -->
+    <form action="전송할 주소(서버주소)" method="get" target="_self">
+      <!-- <form action="전송할 주소(서버주소)" method="get" target="_self" novalidate> -->
+      <div>
+        <label for="name">이름</label>
+        <input type="text" name="" id="" />
+      </div>
+      <div>
+        <label for="tel">연락처</label>
+        <input type="tel" name="" id="tel" />
+      </div>
+
+      <div>
+        <label for="email">이메일</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <button type="submit">저장</button>
+      <!-- <button type="submit" formnovalidate="formnovalidate">저장</button> -->
+      <!-- 위의 주석처럼 formnovalidate를 쓰면 형식이 잘못 되어도 체크하지 않음 -->
+      <!-- button 옆에 안쓰려면, form 태그 옆에 novalidate를 쓰면 체크하지 않음 -->
+    </form>
+  </body>
+</html>

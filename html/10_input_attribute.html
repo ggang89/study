@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <input type="text" name="" id="" value="ABCD" />
+      </div>
+      <div>
+        <input type="text" name="" id="" value="abC" readonly />
+      </div>
+      <div>
+        <input type="text" name="" id="" value="ABX" disabled />
+        <!-- disabled는 form 태그 이용시 전송이 안됨 -->
+      </div>
+      <button type="submit">저장</button>
+    </form>
+    <div>
+      <input type="text" name="" id="" maxlength="4" />
+    </div>
+    <div>
+      <input
+        type="tel"
+        name=""
+        id=""
+        style="width: 100%"
+        placeholder="하이픈(-)없이 숫자만 입력하세요. 예)01011112222"
+      />
+      <!-- placeholder는 상자안에 가이드가 표시됨 -->
+    </div>
+    <form action="">
+      <label for="userId">아이디</label>
+      <input type="text" name="" id="userId" required />
+      <!-- rezuired가 있으면 이 값을 입력 안하면 넘어가지 않음 -->
+      <button type="submit">저장</button>
+    </form>
+    <div>
+      <input type="text" name="email" id="" autocomplete="on" />
+      <!-- autocomplete를 on으로 하면 이제까지 사이트에 쓴 정보값(name에 지정된 거) 이 뜸 -->
+    </div>
+  </body>
+</html>

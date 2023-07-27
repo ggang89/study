@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- img map 사이트에서 점을 찍을 수 있다 -->
+    <!-- 표시된 자리가 눈으로 보이지는 않고, 마우스를 가져다 되면 하이퍼링크 마우스가 나옴 -->
+    <!-- 이케아처럼 마우스 되면 원이 보이게 하려면 기술 필요함.... -->
+    <img src="./img/이케아.JPG" usemap="#image-map" />
+
+    <map name="image-map">
+      <area
+        target="_blank"
+        alt=""
+        title="조명"
+        href="https://www.ikea.com/kr/ko/p/arstid-floor-lamp-brass-white-80321323/"
+        coords="185,254,22"
+        shape="circle"
+      />
+      <!-- target을 blank로 하면 페이지가 이동됨.  -->
+      <!-- href에 이동될 주소를 복사 붙여넣기 함 -->
+      <area
+        target="_blank"
+        alt=""
+        title="소파"
+        href="https://www.ikea.com/kr/ko/p/kivik-3-seat-sofa-tresund-light-beige-s49482832/"
+        coords="63,525,29"
+        shape="circle"
+      />
+      <area
+        target="_blank"
+        alt=""
+        title="진열장"
+        href="https://www.ikea.com/kr/ko/p/vittsjoe-shelving-unit-black-brown-glass-80213314/"
+        coords="373,554,23"
+        shape="circle"
+      />
+      <area
+        target="_self"
+        alt=""
+        title="러그"
+        href="https://www.ikea.com/kr/ko/p/tiphede-rug-flatwoven-natural-black-00456759/"
+        coords="186,631,23"
+        shape="circle"
+      />
+    </map>
+  </body>
+</html>

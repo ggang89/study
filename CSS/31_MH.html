@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+      .header {
+        padding: 60px;
+        text-align: center;
+        background-color: gainsboro;
+        color: black;
+        width: 100%;
+      }
+      .row {
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+      }
+      .side {
+        flex: 10%;
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
+      }
+      .main {
+        flex: 60%;
+        background-color: white;
+        padding: 80px;
+        text-align: top;
+      }
+      .footer {
+        background-color: #ddd;
+        padding: 60px;
+        text-align: center;
+        width: 100%;
+      }
+      @media screen and {
+        max-width: 768px;
+        .row {
+          flex-direction: column;
+        }
+      }
+       {
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header"><h1>헤 더</h1></header>
+    <div class="row">
+      <div class="side">
+        <h5>광고</h5>
+      </div>
+      <div class="main">
+        <p>가나다라마바사</p>
+      </div>
+      <div class="side">
+        <h5>광고</h5>
+      </div>
+    </div>
+    <div class="footer"><h1>푸터</h1></div>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- form요소 -->
+    <!-- 사용자로부터 데이터(정보)를 입력 받기 위한 html 요소들 -->
+    <!-- 최근에는 별로 사용하지 않는 태그임 -->
+    <form action="">
+      <div>
+        <label for="">이메일</label>
+        <input type="email" id="emil" />
+      </div>
+      <div>
+        <label for="">비밀번호</label>
+        <input type="password" id="password" />
+      </div>
+      <div>
+        <button>로그인</button>
+      </div>
+    </form>
+
+    <h4>당신이 배우고 싶은 언어는?(다중 선택 가능)</h4>
+    <div>
+      <input type="checkbox" name="chk_lang" id="chk_html" />
+      <label for="chk_html">HTML</label>
+      <!-- id랑 label for를 연결시켜줘야 리더기가 연결해서 읽어줌 -->
+      <input type="checkbox" name="chk_lang" id="chk_css" />
+      <label for="chk_css">CSS</label>
+      <input type="checkbox" name="chk_lang" id="chk_js" />
+      <label for="chk_js">JavaScript</label>
+    </div>
+    <h4>당신이 배우고 싶은 언어는?(하나만 선택 가능)</h4>
+    <!-- name으로 묶어야 하나만 선택가능함 -->
+    <input type="radio" name="rdo_lang" id="rdo_html" />
+    <label for="">HTML</label>
+    <input type="radio" name="rdo_lang" id="rdo_html" />
+    <label for="">CSS</label>
+    <input type="radio" name="rdo_lang" id="rdo_html" />
+    <label for="">JavaScript</label>
+
+    <div>
+      <label for="favorite color">가장 좋아하는 색상은?</label>
+      <input type="color" id="favorite color" />
+    </div>
+    <div>
+      <label for="born date">태어난 날짜는?</label>
+      <input type="date" id="born dat" />
+    </div>
+    <div>
+      <label for="arriveDateTime">입국한 날짜/시각은?</label>
+      <input type="datetime-local" id="arriveDateTime" />
+    </div>
+    <div>
+      <form action="">
+        <!-- form태그 안에 넣으면 이메일주소 오류 등을 확하는
+           경고창을 띄울 수 있다 -->
+        <label for="userEmail">이메일 주소는?</label>
+        <input type="email" name="" id="userEmail" />
+        <button type="submit">저장</button>
+      </form>
+    </div>
+    <div>
+      <label for="attachment">파일첨부</label>
+      <input type="file" id="attachment" />
+    </div>
+    <div>
+      <!-- hiiden:사용자의 입력을 받기 위한 용도가 아님 -->
+      <!-- 개발자가 사용하기 위해서 쓰는 태그임 -->
+      <input type="hidden" value="jone@gmail.com" />
+    </div>
+    <div>
+      <img src="./피레네의 성.JPG" alt="" style="width: 100px; height: auto" />
+      <input
+        type="image"
+        src="./피레네의 성.JPG"
+        style="width: 100px; height: auto"
+      />
+    </div>
+    <div>
+      <label for="yaermonth">생년/년월</label>
+      <input type="month" id="yaermonth" />
+    </div>
+    <div>
+      <label for="">당신의 나이는?</label>
+      <input type="number" min="0" />
+    </div>
+    <div>
+      <form action="">
+        <label for="phone">전화번호</label>
+        <input type="tell" id="phone" pattern="" />
+        <button type="submit">저장</button>
+      </form>
+    </div>
+    <div>
+      <label for="general">일반문자</label>
+      <input type="text" id="general" />
+    </div>
+    <div>
+      <label for="visittime">예약시간</label>
+      <input type="time" id="visittime" />
+    </div>
+    <div>
+      <form action="">
+        <label for="">블로그 주소는?</label>
+        <input type="url" />
+        <button type="submit">저장</button>
+      </form>
+    </div>
+    <div>
+      <label for="weekplan">주간 계획(몇주차)</label>
+      <input type="week" id="weekplan" />
+    </div>
+    <!-- input type을 잘 써줘야 사용자가 입력할 때 편함 -->
+    <!-- 자판기가 입력하기 편하게 변함(모바일에서) -->
+    <div>
+      <label for="serchkeyboard">검색조건</label>
+      <input type="search" id="serchkeyboard" />
+    </div>
+  </body>
+</html>

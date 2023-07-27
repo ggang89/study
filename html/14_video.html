@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- src=source -->
+    <!-- cntrols :비디오 관련된 재생 , 몀춤, 음성 등 조정을 위한 UI가 제공 -->
+    <!-- autoplay : 자동재생 -->
+    <!-- muted : 음소거로 재생됨 -->
+    <!-- loop : 영상이 끝에 가면 처음부터 다시 실행됨 -->
+    <!-- poster : 영상 실행전 보이는 썸네일 이미지 -->
+    <!-- preload : auto, metadata, none -->
+    <!-- auto: 자동으로 영상을 미리 다운로드 함(필수로 시청해야 할 영상에 쓰면 좋다) -->
+    <!-- metadata : 영상을 다운로드 하지 않고, 영상 상영 시간 같은 메타 정보만 미리 가져옴-->
+    <!-- none: 영상 다운로드 하지 않고, 사용자가 영상을 바로 보지 않을 확률이 높을 것에 사용
+ (서버가 최소한의 트래픽을 유지하고 싶을 때 사용하면 좋다) -->
+    <video src="" width="" controls autoplay muted loop></video>
+    <br />
+    <video src="" width="" controls>
+      <track
+        src=""
+        kind="subtitles"
+        srclang="en(국가별 언어코드)"
+        label="영어(English)"
+      />
+    </video>
+    <!-- 자막 넣는 법 -->
+    <!-- 확장자를 vit로 저장해야 함 -->
+  </body>
+</html>
